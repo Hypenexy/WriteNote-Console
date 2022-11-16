@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uu7i4/AkG7/on+eAUsbA/RgZ2LAavLCc4RvajF6RN8+Nuzb01kAjxa96pcBhx+nb84xGZIay1aA4BPhHX4uk5Q==",
+  "dgSpecHash": "Isgacx9KxlYBmEA2wTRwuT4jYjCEICQhKyOmI3EUW2yn3CCnnyxG9AS+IH/DL0v5owoA0ZcGJNwfHX+PLf7Cmw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hypenexy\\Desktop\\WriteNote-Console-main\\WriteNoteConsole\\WriteNoteConsole.csproj",
+  "projectFilePath": "C:\\Users\\Hypenexy\\Source\\Repos\\WriteNote-Console\\WriteNoteConsole\\WriteNoteConsole.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hypenexy\\.nuget\\packages\\crayon\\2.0.69\\crayon.2.0.69.nupkg.sha512",
     "C:\\Users\\Hypenexy\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []

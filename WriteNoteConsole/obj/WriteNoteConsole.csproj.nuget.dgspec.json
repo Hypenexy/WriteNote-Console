@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hypenexy\\Desktop\\WriteNote-Console-main\\WriteNoteConsole\\WriteNoteConsole.csproj": {}
+    "C:\\Users\\Hypenexy\\Source\\Repos\\WriteNote-Console\\WriteNoteConsole\\WriteNoteConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hypenexy\\Desktop\\WriteNote-Console-main\\WriteNoteConsole\\WriteNoteConsole.csproj": {
+    "C:\\Users\\Hypenexy\\Source\\Repos\\WriteNote-Console\\WriteNoteConsole\\WriteNoteConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hypenexy\\Desktop\\WriteNote-Console-main\\WriteNoteConsole\\WriteNoteConsole.csproj",
+        "projectUniqueName": "C:\\Users\\Hypenexy\\Source\\Repos\\WriteNote-Console\\WriteNoteConsole\\WriteNoteConsole.csproj",
         "projectName": "WriteNoteConsole",
-        "projectPath": "C:\\Users\\Hypenexy\\Desktop\\WriteNote-Console-main\\WriteNoteConsole\\WriteNoteConsole.csproj",
+        "projectPath": "C:\\Users\\Hypenexy\\Source\\Repos\\WriteNote-Console\\WriteNoteConsole\\WriteNoteConsole.csproj",
         "packagesPath": "C:\\Users\\Hypenexy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hypenexy\\Desktop\\WriteNote-Console-main\\WriteNoteConsole\\obj\\",
+        "outputPath": "C:\\Users\\Hypenexy\\Source\\Repos\\WriteNote-Console\\WriteNoteConsole\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hypenexy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Crayon": {
+              "target": "Package",
+              "version": "[2.0.69, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"

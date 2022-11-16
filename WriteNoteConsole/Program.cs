@@ -2,6 +2,8 @@
 using System;
 using System.Net;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using static Crayon.Output;
 
 internal class Program
 {
@@ -15,6 +17,7 @@ internal class Program
         };
         //string Server = "https://writenote.midelight.net";
         string Server = "http://localhost/WriteNoteApp/";
+        string responseString = "WNCError1";
         while (true)
         {
             Console.WriteLine("WriteNote Command Interface");
@@ -25,13 +28,13 @@ internal class Program
                 Console.Write("Username: ");
                 Username = Console.ReadLine();
                 if (Username.Length < 1) {
-                    Console.WriteLine("Username can't be empty!");
+                    Console.WriteLine(Red("Username can't be empty!"));
                 }
                 else
                 {
                     if (Username.Length > 20)
                     {
-                        Console.WriteLine("Username can't be that long!");
+                        Console.WriteLine(Red("Username can't be that long!"));
                     }
                     else
                     {
@@ -72,13 +75,12 @@ internal class Program
                 {"password", Password }
             };
             var content = new FormUrlEncodedContent(values);
-            string responseString = "WNCError1";
             var cts = new CancellationTokenSource();
             bool networksuccess = true ;
 
             try
             {
-                var response = await client.PostAsync(Server + "app/getnotes.php", content);
+                var response = await client.PostAsync(Server + "app/startup.php", content);
                 responseString = await response.Content.ReadAsStringAsync();
                 responseString = JsonConvert.SerializeObject(responseString);
             }
@@ -99,33 +101,58 @@ internal class Program
             }
             catch
             {
-                //networksuccess = false; DEBUG PURPOSE ONLY
-                //Console.WriteLine("Could not connect to server: " + Server);
-                //Console.WriteLine("Check your internet connection or the server's status...");
-                //Console.WriteLine();
+                networksuccess = false;
+                Console.WriteLine(Red("Could not connect to server: " + Bold(Server)));
+                Console.WriteLine(Red("Check your internet connection or the server's status..."));
+                Console.WriteLine();
             }
 
             if (networksuccess == true)
             {
+                //Console.WriteLine(responseString); debug only
                 break;
             }
-            //Console.WriteLine(responseString);
         }
 
-        var receivedUsername = "Hypenexy";
+        string responsedataObject = JsonConvert.DeserializeObject(responseString).ToString();
+        dynamic responsedata = JObject.Parse(responsedataObject);
+        string verifiedusername = responsedata.user.username.ToString();
+        string pfp = responsedata.user.pfp.ToString();
+        string temp = responsedata.weather.temp.ToString();
+        string type = responsedata.weather.desc.ToString();
+        string city = responsedata.weather.city.ToString();
+        void printPfp(string pfp){
+            string[] lines = pfp.Split('n');
+            for (int i = 0; i < lines.Length; i++)
+            {
+                Console.WriteLine();
+                string[] pixels = lines[i].Split(';');
+                for (int l = 0; l < pixels.Length-1; l++)
+                {
+                    string[] rgb = pixels[l].Split(',');
+                    Console.Write(Rgb(byte.Parse(rgb[0]), byte.Parse(rgb[1]), byte.Parse(rgb[2])).Text("█"));
+                }
+            }
+        }
+        printPfp(pfp);
         Console.WriteLine();
-        Console.WriteLine("Welcome, " + receivedUsername);
-        Console.WriteLine("The time in Plovdiv is 24.4 Degrees Celsius with a light mist");
+        Console.WriteLine("Welcome, " + Bold(verifiedusername));
+        Console.WriteLine($"The weather in {city} is {type} at {temp} Degrees Celsius");
         Console.WriteLine();
 
         void printHelp()
         {
+            void print(string command, string[] parameters, string description)
+            {
+                Console.WriteLine(" " + command + " {" + String.Join("} {", parameters) + "} - " + Rgb(120, 120, 120).Text(description));
+            }
             Console.WriteLine("List of commands:");
-            Console.WriteLine(" get {file_name} - Downloads and displays the specified file from your account.");
-            Console.WriteLine(" create {file_name} {content} - Creates a new file with the specified name containing the content if specified.");
-            Console.WriteLine(" delete {file_name} - Deletes permamently the specified file from your account.");
-            Console.WriteLine(" help - Displays this list.");
-            Console.WriteLine(" exit - Exits the application.");
+            print("get", new string[]{"file_name"}, "Downloads and displays the specified file from your account.");
+            print("list", new string[]{}, "Displays a list of your existing files.");
+            print("create", new string[]{"file_name", "content"}, "Creates a new file with the specified name containing the content if specified.");
+            print("delete", new string[]{"file_name"}, "Deletes permamently the specified file from your account.");
+            print("help", new string[]{}, "Displays this list.");
+            print("exit", new string[]{}, "Exits the application.");
             Console.WriteLine();
         }
         void exitApp()

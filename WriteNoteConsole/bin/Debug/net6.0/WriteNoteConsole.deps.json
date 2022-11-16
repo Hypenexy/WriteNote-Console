@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v6.0": {
       "WriteNoteConsole/1.0.0": {
         "dependencies": {
+          "Crayon": "2.0.69",
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "WriteNoteConsole.dll": {}
+        }
+      },
+      "Crayon/2.0.69": {
+        "runtime": {
+          "lib/netstandard2.0/Crayon.dll": {
+            "assemblyVersion": "2.0.69.0",
+            "fileVersion": "2.0.69.0"
+          }
         }
       },
       "Newtonsoft.Json/13.0.1": {
@@ -29,6 +38,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Crayon/2.0.69": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eJHxoMTfhZs1782YUIMafXIDTPcTwAV5I3MNsl2d4Mn61/h3ABPMSzHwzigL/NO7BrCKRoP4gHJuERpLHdSCvg==",
+      "path": "crayon/2.0.69",
+      "hashPath": "crayon.2.0.69.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.1": {
       "type": "package",
