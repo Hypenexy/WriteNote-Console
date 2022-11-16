@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteNoteConsole", "WriteNoteConsole\WriteNoteConsole.csproj", "{6FCB0E8D-74B5-4AE2-9750-9130FABCFF42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FCB0E8D-74B5-4AE2-9750-9130FABCFF42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FCB0E8D-74B5-4AE2-9750-9130FABCFF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FCB0E8D-74B5-4AE2-9750-9130FABCFF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FCB0E8D-74B5-4AE2-9750-9130FABCFF42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8970D20D-BBB2-4299-91C5-42112457DFEF}
+	EndGlobalSection
+EndGlobal

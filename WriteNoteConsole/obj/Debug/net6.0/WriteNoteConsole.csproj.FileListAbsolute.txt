@@ -1,0 +1,17 @@
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\bin\Debug\net6.0\WriteNoteConsole.exe
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\bin\Debug\net6.0\WriteNoteConsole.deps.json
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\bin\Debug\net6.0\WriteNoteConsole.runtimeconfig.json
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\bin\Debug\net6.0\WriteNoteConsole.dll
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\bin\Debug\net6.0\WriteNoteConsole.pdb
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\obj\Debug\net6.0\WriteNoteConsole.csproj.AssemblyReference.cache
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\obj\Debug\net6.0\WriteNoteConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\obj\Debug\net6.0\WriteNoteConsole.AssemblyInfoInputs.cache
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\obj\Debug\net6.0\WriteNoteConsole.AssemblyInfo.cs
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\obj\Debug\net6.0\WriteNoteConsole.csproj.CoreCompileInputs.cache
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\obj\Debug\net6.0\WriteNoteConsole.dll
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\obj\Debug\net6.0\refint\WriteNoteConsole.dll
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\obj\Debug\net6.0\WriteNoteConsole.pdb
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\obj\Debug\net6.0\WriteNoteConsole.genruntimeconfig.cache
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\obj\Debug\net6.0\ref\WriteNoteConsole.dll
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Hypenexy\source\repos\WriteNoteConsole\WriteNoteConsole\obj\Debug\net6.0\WriteNoteConsole.csproj.CopyComplete
