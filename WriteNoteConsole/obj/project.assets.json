@@ -57,11 +57,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hypenexy\\source\\repos\\WriteNoteConsole\\WriteNoteConsole\\WriteNoteConsole.csproj",
+      "projectUniqueName": "C:\\Users\\Hypenexy\\Desktop\\WriteNote-Console-main\\WriteNoteConsole\\WriteNoteConsole.csproj",
       "projectName": "WriteNoteConsole",
-      "projectPath": "C:\\Users\\Hypenexy\\source\\repos\\WriteNoteConsole\\WriteNoteConsole\\WriteNoteConsole.csproj",
+      "projectPath": "C:\\Users\\Hypenexy\\Desktop\\WriteNote-Console-main\\WriteNoteConsole\\WriteNoteConsole.csproj",
       "packagesPath": "C:\\Users\\Hypenexy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hypenexy\\source\\repos\\WriteNoteConsole\\WriteNoteConsole\\obj\\",
+      "outputPath": "C:\\Users\\Hypenexy\\Desktop\\WriteNote-Console-main\\WriteNoteConsole\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hypenexy\\AppData\\Roaming\\NuGet\\NuGet.Config",
